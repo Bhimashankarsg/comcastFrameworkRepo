@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.comcast.crm.orgtest.CreateOrg_Indu_Phone_Test">
+				<methods>
+					<include name="createorganWithIndTest"></include>
+					<include name="createorgwithphonenoTest">
+
+					</include>
+
+				</methods>
+			</class>
+			<class
+				name="com.comcast.crm.contacttest.CreateContact_Org_SupDate_Test">
+				<methods>
+
+					<include name="createContactWithOrgTest"></include>
+					<include name="createcontactwithsupportDateTest">
+
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
